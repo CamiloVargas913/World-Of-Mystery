@@ -1,0 +1,52 @@
+.footer{
+  background: #43137F80;
+  width: 100%;
+  text-align: center;
+  clear: both;
+  font-family: udec;
+}
+.social
+{
+    margin-bottom: 15px;
+}
+.social
+{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 3.5em;
+    border-radius: 50%;
+    width: 99%;
+    margin: 1px;
+    padding-top: 10px;
+    line-height: .1;
+}
+.footer p{
+  color:#fff;
+}
+.fa-facebook-square{
+  color: rgb(255, 255, 255);
+}
+.fa-facebook-square:hover
+{
+  color: #4267B2;
+}
+.fa-twitter-square
+{
+  color: rgb(255, 255, 255);
+}
+.fa-twitter-square:hover
+{
+  color: rgb(0, 132, 180);
+}
+.fa-google-plus-square
+{
+  color: rgb(255, 255, 255);
+}
+.fa-google-plus-square:hover
+{
+  color: rgb(211, 72, 54);
+}
+.copy
+{
+    font-size: .9em;
+}
