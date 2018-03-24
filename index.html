@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/cabecera.css">
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/ventana-modal.css">
+	<link rel="stylesheet" type="text/css" href="css/noticias.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script type="text/javascript" charset="utf-8">
   	$(window).load(function() {
@@ -27,15 +29,30 @@
 				<nav>
 					<ul>
 						<li><a href="#inicio">Inicio</a></li>
-						<li><a href="">Noticias</a></li>
-						<li><a href="">Ingresar</a></li>
+						<li><a href="#noticias">Noticias</a></li>
+						<li><a id="BtnModal">Ingresar</a></li>
 						<li><a href="">Contacto</a></li>
 						<li><a href="#acerca">Acerca de</a></li>
 					</ul>
 				</nav>
 		</section>
 	</header>
-	
+	<section id="myModal" class="modal">
+		<section class="Contenido-Modal animate">
+			<section class="contenedor-avatar">
+				<span class="close">&times;</span>
+					<img src="imagenes/1.png" alt="Avatar" class="avatar" >
+					<h1 class="titulo">Iniciar sesión</h1>
+					<form action="php/registro_usuario.php" enctype="multipart/form-data" method="POST">
+						<input type="text" placeholder="Ingrese Su Nickname" name="nickname" required="">
+      					<input type="password" placeholder="Ingrese Su Contraseña " name="psw" required="">   
+      					<button type="submit">Login</button>     
+      					<a href="#" class="contras"> Crear una cuenta.</a>
+      					<a href="#" class="contras">¿Se te olvidó tu contraseña?</a>
+					</form>
+			</section>
+		</section>
+	</section>
 	<section class="contenedor">
 		<section class="flexslider">
 
@@ -61,7 +78,6 @@
 			</li>
 		</ul>
 	</section>
-
 		<section class="descripcion">
 			<h3>World of Mystery</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nisi libero ipsa quibusdam quos nulla veniam atque ipsam, excepturi mollitia. Eum saepe voluptates incidunt omnis at in odio eos perspiciatis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aut, consequatur atque repudiandae ex soluta, voluptates sit, explicabo maiores voluptas expedita alias animi magnam dicta rem blanditiis placeat itaque ut Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reiciendis cum minus officiis, iusto odit dignissimos perferendis, veniam deserunt nemo odio porro inventore blanditiis! Deserunt facilis voluptate molestiae, tempore alias.</p>
@@ -75,6 +91,41 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt culpa libero aliquid nesciunt, ullam odit fuga, saepe iure, eaque itaque, et laudantium omnis quidem deleniti consequatur aperiam neque dignissimos? Fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iusto, beatae reiciendis vitae dolorem voluptatibus. Officiis at sit reiciendis voluptatem explicabo eaque, alias pariatur magnam molestiae vitae suscipit ut delectus.</p>
 			</section>
 		</section>
+		<section class="noticias" id="noticias">
+			<h3>Noticias</h3>
+			<article class="noticia">
+				<section class="caja">
+					<img src="imagenes/img3.jpg" alt="" class="imgnoticia">
+					<section class="textonoticia">
+						<a href="">Texto de la noticia N°1</a>
+					</section>
+				</section>
+			</article>
+			<article class="noticia">
+				<section class="caja">
+					<img src="imagenes/img9.jpg" alt="" class="imgnoticia">
+					<section class="textonoticia">
+						<a href="">Texto de la noticia N°2</a>
+					</section>
+				</section>
+			</article>
+			<article class="noticia">
+				<section class="caja">
+					<img src="imagenes/img7.jpg" alt="" class="imgnoticia">
+					<section class="textonoticia">
+						<a href="">Texto de la noticia N°3</a>
+					</section>
+				</section>
+			</article>
+			<article class="noticia">
+				<section class="caja">
+					<img src="imagenes/img6.jpg" alt="" class="imgnoticia">
+					<section class="textonoticia">
+						<a href="">Texto de la noticia N°4</a>
+					</section>
+				</section>
+			</article>
+		</section>
 		<section class="acerca" id="acerca">
 			<section class="parrafo2">
 				<h3>Acerca De </h3>
@@ -86,17 +137,15 @@
 			
 		</section>
 		<footer class="footer">
-		<section class="social">	
-			 <a href="https://facebook.com" target="_blank" class="fab fa-facebook-square"></a>
-	        <a href="https://twitter.com" target="_blank" class="fab fa-twitter-square"></a>
-	        <a href="https://plus.google.com/explore" target="_blank" class="fab fa-google-plus-square"></a>
-		</section>
+			<section class="social">	
+				 <a href="https://facebook.com" target="_blank" class="fab fa-facebook-square"></a>
+		        <a href="https://twitter.com" target="_blank" class="fab fa-twitter-square"></a>
+		        <a href="https://plus.google.com/explore" target="_blank" class="fab fa-google-plus-square"></a>
+			</section>
 		 <p class="copy">&copy; World of Mystery 2018 - Todos los derechos reservados</p>
-	</footer>
+		</footer>
 	</section>
-
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
+	<script src="js/ventana-modal.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
