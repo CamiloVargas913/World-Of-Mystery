@@ -29,3 +29,20 @@ $(document).keyup(function(event){
             modal.style.display = "none";
         }
 });
+//////////Cambio de login a registro/////////
+// trae el id de mi section 
+var registro = document.getElementById('Registro');
+var ingreso = document.getElementById('Ingreso');
+
+// trae el id boton para llamar modal
+var btn = document.getElementById("btRegistro");
+var volver = document.getElementById("volver");
+// al hacer clicks en el boton , abre la ventana modal 
+btn.onclick = function() {
+	ingreso.style.display="none";
+  registro.style.display = "block";
+}
+volver.onclick = function() {
+	ingreso.style.display="block";
+  registro.style.display = "none";
+}

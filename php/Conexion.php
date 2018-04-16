@@ -3,7 +3,7 @@
 * 
 */
 class Conexion{
-	private $db='mysql:host=localhost;dbname=worldmystery';
+	private $db='mysql:host=localhost;dbname=dbworldmystery';
 	private $user='root';
 	private $pass='';
 	/*metodos*/

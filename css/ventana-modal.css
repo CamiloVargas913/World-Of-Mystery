@@ -8,6 +8,10 @@
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
     z-index: 1000;
+    font-family: udec;
+}
+.Registro{
+    display: none;
 }
 
 .Contenido-Modal {
@@ -15,12 +19,14 @@
     margin: 4% auto 15% auto;
     padding: 5px;
     width: 40%; 
-    padding-bottom: 30px;
-    box-shadow: 0px 0px 30px 0px #43137FF5;
+    padding-bottom: 3px;
+    box-shadow: 0px 0px 20px 0px #000;
     transition: all 300ms;
-    border-radius: 6px;
+    border-radius: 2px;
 }
-
+.Ingreso a{
+    color: #004d40;
+}
 
 .close {
     color: #000;
@@ -40,23 +46,32 @@
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
+   
 }
 .avatar {
-    width: 200px;
-    height:200px;
+    width: 30%;
     border-radius: 50%;
+     padding: 2px;
 }
-input[type=text], input[type=password] {
+input[type=text],input[type=file], input[type=password],input[type=date],select ,textarea{
     width: 90%;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin: 8px 26px;
     display: inline-block;
-    border: 1px solid #43137FF5;
+    border: 1px solid #1565c0;
     box-sizing: border-box;
     font-size:16px;
+    font-family: Udec;
 }
+label{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    color: #1565c0;
+}
+
 button {
-    background-color: #43137FF5;
+    background-color: #1565c0;
     color: white;
     padding: 14px 20px;
     margin: 8px 26px;
@@ -70,12 +85,17 @@ button:hover {
 }
 .contras{
     text-decoration:none; 
-    margin-left::;%; 
-    margin-top:30px 30px;
+    margin-left:3%; 
+    margin-top:35px;
+    padding: 5px;
+    font-size: 110%;
+}
+.contras:hover{
+    color: #1565c0;
 }
 .titulo{
-    color:  #43137FF5;
-    font-size: 150%;
+    color:  #1565c0;
+    font-size: 200%;
     font-family: udec;
 }
 .animate {
@@ -85,3 +105,4 @@ button:hover {
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
+

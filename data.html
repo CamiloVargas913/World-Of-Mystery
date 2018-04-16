@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="php/registro_usuario.php" enctype="multipart/form-data" method="POST">
+						<select name="pais" id="pais">
+							<option value="">Seleccione Pais</option>
+							<option value="1">Colombia</option>
+							<option value="2">Brasil</option>
+							<option value="3">Argentina</option>
+						</select>
+						<input type="text" placeholder="Ingrese Su Nombre" name="nombre" required="">
+						<input type="text" placeholder="Ingrese Su Apellido" name="apellido" required="">
+      			<input type="text" placeholder="Ingrese Su Nickname" name="nickname" required="">
+      			<input type="file" placeholder="Ingrese Su Contraseña " name="avatar" required=""> 
+      			<input type="password" placeholder="Ingrese Su Contraseña " name="psw" required="">   
+
+      			<!--<label for="not"><input type="checkbox" id="not" name="not"> Me gustaria recibir noticias. </label>   
+      			<label for="cond"><input type="checkbox" id="terminos" name="terminos" required=""> He leido y acepto <a href="">terminos de servicio</a></label>-->
+      			<button type="submit">Crear Cuenta</button>  
+      			<a href="#" id="volver" class="contras"> < Volver > </a>
+					</form>
+</body>
+</html>

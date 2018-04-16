@@ -1,0 +1,38 @@
+.Ranking{
+	width: 100%;
+}
+.Ranking .contenedor{
+	width: 100%;
+	margin-top: 2%;
+	background: #5A62AAFF;
+	border-radius: 2px;
+	float:left;
+}
+.Ranking .contenedor table {
+    border-collapse: collapse;
+		width: 96%;
+		background: #000000c4;
+		margin: 2% ;
+		color: #fff;
+		
+}
+.Ranking .contenedor table thead{
+	background: #57007FB6;	
+	border: 5px solid #57007FB6;
+}
+
+
+.Ranking .contenedor td, th {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #5a62aaab;;
+}
+.Ranking .contenedor h3{
+	text-align: center;
+	font-size: 280%;
+	color:#fff;
+	margin-top: 1%;
+}

@@ -1,12 +1,18 @@
 .footer{
-  background: #43137F80;
   width: 100%;
+  margin-top: 2%;
+  border-radius: 2px;
+  float:left;
+}
+footer{
   text-align: center;
+  background: #000;
   clear: both;
   font-family: udec;
+  width: 100%;
+
 }
-.social
-{
+.social{
     margin-bottom: 15px;
 }
 .social
@@ -22,6 +28,7 @@
 }
 .footer p{
   color:#fff;
+  padding: 10px;
 }
 .fa-facebook-square{
   color: rgb(255, 255, 255);
