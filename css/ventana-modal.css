@@ -9,14 +9,14 @@
     background-color: rgba(0,0,0,0.4);
     z-index: 1000;
     font-family: udec;
-}
+  }
 .Registro{
     display: none;
 }
 
 .Contenido-Modal {
     background-color:#FFF;
-    margin: 4% auto 15% auto;
+    margin: 5% auto 15% auto;
     padding: 5px;
     width: 40%; 
     padding-bottom: 3px;
@@ -44,37 +44,32 @@
 }
 .contenedor-avatar {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 5% 0% 5% 0%;
     position: relative;
    
 }
 .avatar {
     width: 30%;
+    margin-left: 10%;
     border-radius: 50%;
-     padding: 2px;
+    padding: 2px;
 }
-input[type=text],input[type=file], input[type=password],input[type=date],select ,textarea{
+input[type=text],input[type=file], input[type=password],input[type=date],select{
     width: 90%;
     padding: 10px 20px;
-    margin: 8px 26px;
+    margin: 1% auto 1% auto;
     display: inline-block;
     border: 1px solid #1565c0;
     box-sizing: border-box;
     font-size:16px;
     font-family: Udec;
 }
-label{
-    display: inline-block;
-    width: 100%;
-    padding: 5px;
-    color: #1565c0;
-}
 
 button {
     background-color: #1565c0;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 26px;
+    margin: auto 5% auto 5%;
+    padding: 14px 20px  ;
     border: none;
     cursor: pointer;
     width: 90%;
@@ -85,10 +80,10 @@ button:hover {
 }
 .contras{
     text-decoration:none; 
-    margin-left:3%; 
+    margin-left:4%; 
     margin-top:35px;
     padding: 5px;
-    font-size: 110%;
+    font-size: 120%;
 }
 .contras:hover{
     color: #1565c0;
@@ -100,6 +95,36 @@ button:hover {
 }
 .animate {
     animation: zoom 0.6s;
+}
+.cargas{
+  font-size: 120%;
+  text-align: center;
+  display: none;
+ 
+}
+.cargas i {
+  font-size: 140%;
+  text-align: center;
+}
+.alert{
+  color:#fff;
+  background: rgba(226, 60, 60, .8313725490196079);
+  padding: 2%;
+  margin: 1% 5% auto 5%;
+  border-radius: 3px;
+  text-align: center;
+  width: 86%;
+
+}
+
+.alert2{
+  color:#fff;
+  background: rgba(68, 215, 74, .796078431372549);
+  padding: 2%;
+  border-radius: 3px;
+  margin: 0% 5% 0% 5%;
+  text-align: center;
+  width: 86%;
 }
 @keyframes zoom {
     from {transform: scale(0)} 

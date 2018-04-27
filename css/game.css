@@ -3,15 +3,11 @@
 	padding: 0;
 }
 
-body{
-	background:#21007FC6;       //url('../imagenes/img11.jpg')
+body{       //url('../imagenes/img11.jpg')
   width: 100%;
 }
  header {
-      width: 100%;
-      height: 100vh;
-      background: url(../imagenes/img12.png) no-repeat 50% 50%;
-      background-size: cover;
+    width: 100%;
 }
 .icon-logo{
   font-size: 150%;
@@ -43,7 +39,7 @@ nav {
 nav ul {
       line-height: 60px;
       list-style: none;
-      background: rgba(0, 0, 0, 0);
+      background: #000;
       overflow: hidden;
       color: #fff;
       padding: 0;
@@ -55,8 +51,6 @@ nav ul {
  
 nav.black ul {
       background: #000;
-      border-bottom: 3.5px solid #5A62AA;
-
 }
  
 nav ul li {
@@ -102,44 +96,16 @@ nav ul li a:hover{
  .card:hover{
  box-shadow: 0 20px 32px 0 rgba(0,0,0,0.4);
 }
-
-.descripcion{
-  width: 90%; 
-  margin:auto;
-  border-radius: 2px;
-  background: #5A62AAFF;
-  padding: 10px;
-  text-align: center; 
-  color: #fff;
-}
- h3{
-  padding: 10px;
-  font-size: 190%;
-  color: #fff;
-  text-align: center;
-}
-.video{
-  color: #fff;
-  width: 100%;
-  margin-top: 3%;
-}
-.video video{
-  width: 45%;
-  display: block;
-  float:left;
-  border-radius: 2px;
-}
-.parrafo{
-  margin-top: 2%;
-  width: 50%;
-  float:right; 
-  text-align: center;
-  padding: 10px;
-  border-radius: 2px;
-  background: #004d40;
+.logo1{
+ width: 65px;
+ height: 60px;
+ -moz-border-radius: 50%;
+ -webkit-border-radius: 50%;
+ border-radius: 50%;
 }
 .logo2{
  display: none;
+ width: 50%;
 }
 .logo3{
   position: fixed;
@@ -147,68 +113,17 @@ nav ul li a:hover{
   margin: 0px 46px;
   color: #fff;
   display: none;
-}
-.acerca{
-  width: 100%;
-  float: left;
-}
-.img img{
-  margin-top: 3%; 
-  width: 26%;
-  display: block;
-  float:right;
-  border-radius: 2px;
-  padding: 2%;
-  background: #57007FB6;
-}
-.parrafo2{
-  margin-top: 2%;
-  width: 65%;
-  float:left; 
-  border-radius: 2px;
-  padding: 2%;
-  background: #57007FB6;
-}
-.parrafo2 p{
-  margin-top: 2%;
-  text-align: justify;
-  color:#fff;
-  
-}
-
-.contacto{
-  width: 97%;
-  margin-top: 2%;
-  border-radius: 2px;
-  padding: 1.5%;
-  float:left;
-}
-.Contenido{
-  border-radius: 2px;
-  padding: 2%;
-  margin: 0% 25% 0% 25%;
-  background: #004d40;
   width: 50%;
 }
-.Contenido input[type=text],textarea{
-    width: 100%;
-    padding: 10px 20px;
-    margin: 1% auto 1% auto;
-    display: inline-block;
-    border: 1px solid #1565c0;
-    box-sizing: border-box;
-    font-size:16px;
-    font-family: Udec;
+h3{
+  float: left;
+  margin-left: 40%;
+  font-family: udec;
 }
-.btn{
- border-radius: 5px; 
- margin: 1% auto 1% auto;
- width:100%;
-}
-.btn:hover{
-  background: #00137FFF;
-  
-}
+h3:hover{
+  color:#1565c0;
+  }
+
 /*
 .Bienvenido{
   background: white;
