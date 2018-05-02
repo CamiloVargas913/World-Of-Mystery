@@ -1,8 +1,5 @@
 <?php 
 require_once('Conexion.php');
-$tag = $_POST['reg'];
-if (isset($tag) && $tag !='') {
-	if ($tag == 'registro') {
 		$pais=$_POST['pais'];
 		$nombre=$_POST['nombre'];
 		$apellido=$_POST['apellido'];
@@ -16,15 +13,29 @@ if (isset($tag) && $tag !='') {
 		//insercion base de datos
 		$conn=new Conexion();
 		$llamarMetodo=$conn->Conectar();
+		$res=validarUsuario($llamarMetodo,$nickname);
+		if ($res) {	
 		$sql="INSERT INTO usuario  VALUES (NULL, '$nickname', '$ruta', '$nombre', '$apellido', '$pais', '$pasword', '$nivel')";
 		$stmt=$llamarMetodo->prepare($sql);
 		$stmt->execute();
 			if ($stmt) {
 				$carga = @move_uploaded_file($_FILES['avatar']['tmp_name'], $ruta);
-				echo true;
+				echo "<section class='alert2'>Usuario Registrado</section>";
 			}else{
-				echo false;
+				echo "<section class='alert'>Error al registrar usuario</section>";
 			}
-	}
-}
+		}else{
+			echo false;
+			echo "<section class='alert'>El nickname ya exite</section>";
+		}
+		function validarUsuario($llamarMetodo,$a){
+				$sql="SELECT * FROM usuario WHERE Nickname= '$a'";
+				$stmt=$llamarMetodo->prepare($sql);
+				$stmt->execute();
+					if ($stmt->rowCount()>0) {
+						return false;
+					}else{
+						return true;
+					}
+				}
  ?>

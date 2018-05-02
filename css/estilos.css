@@ -190,7 +190,7 @@ nav ul li a:hover{
   background: #004d40;
   width: 50%;
 }
-.Contenido input[type=text],textarea{
+.Contenido input[type=text],textarea,input[type=email]{
     width: 100%;
     padding: 10px 20px;
     margin: 1% auto 1% auto;

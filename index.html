@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/Ranking.css">
   <link rel="stylesheet" type="text/css" href="fonts/style.css">
   <script src="js/jquery.min.js"></script>
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
   <section class="wrapper">
@@ -48,7 +48,7 @@
         <section class="Ingreso" id="Ingreso">
           <img src="imagenes/1.png" alt="Avatar" class="avatar" >
           <h1 class="titulo">Iniciar Sesión</h1>
-          <form class="Log" > <!-- action="php/ingresoUsuario.php" method="POST"-->
+          <form class="Log" `> <!-- action="php/ingresoUsuario.php" method="POST"-->
             <input type="text" placeholder="Ingrese Su Nickname" name="nickname" required="">
             <input type="password" placeholder="Ingrese Su Contraseña " name="pass" required="">   
             <button type="submit">Login</button>
@@ -78,6 +78,7 @@
             <!--<label for="not"><input type="checkbox" id="not" name="not"> Me gustaria recibir noticias. </label>   
             <label for="cond"><input type="checkbox" id="terminos" name="terminos" required=""> He leido y acepto <a href="">terminos de servicio</a></label>-->
             <button type="submit">Crear Cuenta</button>  
+            <section class="men3"></section>
             <a href="#" id="volver" class="contras"> <i class="fas fa-arrow-left"></i> Volver  </a>
           </form>
       </section>
@@ -174,12 +175,13 @@
     <section class="contacto" id="contacto">
       <section class="Contenido card">
             <h3><i class="fas fa-user"></i> Contacto</h3>
-        <form action="">
-          <input type="text" name="nombre" placeholder="Nombre">
-          <input type="text" name="correo" placeholder="Correo">
-          <input type="text" name="nickname" placeholder="Nickname">
-          <textarea name="mensage"  placeholder="Mensage" cols="10" rows="10"></textarea>
+        <form class="cont">
+          <input type="text" name="asunto" placeholder="Asunto" required="">
+          <input type="email" name="correo" placeholder="Correo" required="">
+          <textarea name="mensaje"  placeholder="Mensage" required="" cols="10" rows="10"></textarea>
           <button type="submit" class="btn">Enviar</button>
+          <section class="cargas"><i class="fa fa-spinner fa-spin"></i>  Enviando... </section>
+          <section class="men2"></section>
         </form>
       </section>
     </section>
@@ -207,6 +209,6 @@
 <script src="js/formulario.js"></script>
 <script src="js/ventana-modal.js"></script>
 <script src="js/nav.js"></script>
-<!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+<script defer src="js/all-fontawesome.js"></script>
 </body>
 </html>
