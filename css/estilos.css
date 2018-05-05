@@ -4,53 +4,55 @@
 }
 
 body{
-	background:#21007FC6;       //url('../imagenes/img11.jpg')
+	background:#21007FC6;
   width: 100%;
 }
  header {
-      width: 100%;
-      height: 100vh;
-      background: url(../imagenes/img12.png) no-repeat 50% 50%;
-      background-size: cover;
+  width: 100%;
+  background-size: cover;
+}
+.wrapper{
+  z-index: 9999;
+  position: relative;
 }
 .icon-logo{
   font-size: 150%;
-font-family: bold;
+  font-family: bold;
   color:#fff;
 }
 .content {
-      width: 94%;
-      margin: 2em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
-      font-family: udec;
+  width: 94%;
+  margin: 2em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  font-family: udec;
 }
  
 .logo {
-      position: fixed;
-      float: left;
-      margin: 0px 46px;
-      color: #fff;
+  position: fixed;
+  float: left;
+  margin: 0px 46px;
+  color: #fff;
 }
  
 nav {
-      position: fixed;
-      width: 100%;
-      line-height: 60px;
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
 }
  
 nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      padding-right: 40px;
-      transition: 1s;
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
 }
  
 nav.black ul {
@@ -84,16 +86,16 @@ nav ul li a:hover{
 }
  
 .menu-icon {
-      line-height: 60px;
-      width: 100%;
-      background: #000;
-      text-align: right;
-      box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      z-index: 9999;
-      display: none;
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 9999;
+  display: none;
 }
  .card{
    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
@@ -102,7 +104,13 @@ nav ul li a:hover{
  .card:hover{
  box-shadow: 0 20px 32px 0 rgba(0,0,0,0.4);
 }
-
+#inicio{
+  padding:40px;
+}
+#noticias,#ranking,#contacto{
+  padding:40px;
+  float: left;
+}
 .descripcion{
   width: 90%; 
   margin:auto;
@@ -172,13 +180,11 @@ nav ul li a:hover{
 .parrafo2 p{
   margin-top: 2%;
   text-align: justify;
-  color:#fff;
-  
+  color:#fff; 
 }
 
 .contacto{
   width: 97%;
-  margin-top: 2%;
   border-radius: 2px;
   padding: 1.5%;
   float:left;
@@ -190,7 +196,7 @@ nav ul li a:hover{
   background: #004d40;
   width: 50%;
 }
-.Contenido input[type=text],textarea,input[type=email]{
+.contacto form input[type=email],input[type=text],textarea{
     width: 100%;
     padding: 10px 20px;
     margin: 1% auto 1% auto;
@@ -209,25 +215,39 @@ nav ul li a:hover{
   background: #00137FFF;
   
 }
-/*
-.Bienvenido{
-  background: white;
+/*jugar*/
+.juego a{ 
+position: absolute;
+top: 80%;
+left:40% ;
+right:40%;
+width: 20%; 
+font-size: 30px;
+color: #FFF;
+text-decoration: none;
+padding: 5px;
+border: 3px solid #1565c0;
 }
-.titlebienvenido{
-  margintop: 2%;
-  text-align: center;
+.juego a:hover{
+color:  #1565c0;
+background: #FFF;
+
 }
-.juego{
-  background: white;
+/*estilos Scroll*/
+body::-webkit-scrollbar{
+  width: 15px;
+  background: #000;
 }
-.game{
-  background: ;
-}*/
+body::-webkit-scrollbar-thumb{
+  background: #5A62AA;
+  border-radius: 5px;
+  border: 3px solid #000;
+}
 @font-face{
   font-family: udec;  
   src:url(../fonts/Raleway-Regular.ttf);
 }
-@media(max-width: 680px) {
+@media(max-width: 900px) {
       .logo {
             position: fixed;
             top: 0;
@@ -261,5 +281,9 @@ nav ul li a:hover{
       .menu-icon {
             display: block;
       }
+      .juego a{
+        font-size: 15px;
+       }
+
  
 }

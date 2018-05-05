@@ -14,8 +14,7 @@ $(document).ready(function () {
     })
     .done(function(){
       $('.men').html('<section class="alert2">Bienvenido</section>');
-      location.href="php/game.php";
-
+      location.href="index.php";
     })
     .fail(function(){
       $('.men').html('<section class="alert"> Credenciales incorrectas </section>');

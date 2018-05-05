@@ -38,7 +38,7 @@ if(isset($_SESSION['ingreso']) && $_SESSION['ingreso']==true){
         </section>
         <section class="menu">
           <ul id="menu-ico">
-          	<h3>Bienvenido [ <?php echo $fila['Nickname']; ?> ]</h3>
+          	<h3>Bienvenido [ <?php echo $fila['Nickname']?> ]</h3>
             <li><a href="cerrar_sesion.php"><i class="fas fa-sign-out-alt"></i>Salir</a></li>
           </ul>
         </section>
