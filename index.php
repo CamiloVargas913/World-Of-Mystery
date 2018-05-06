@@ -32,11 +32,11 @@
         <section class="menu">
           <ul id="menu-ico">
             <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#ranking">Ranking</a></li>
-            <li><a id="BtnModal">Ingresar / Registrar</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#data">Acerca de</a></li>
+            <li><a href="#noticias"><i class="fas fa-exclamation-circle"></i> Noticias</a></li>
+            <li><a href="#ranking"><i class="fas fa-trophy"></i>  Ranking</a></li>
+            <li><a href="#contacto"><i class="fa fa-comment"></i> Contacto</a></li>
+            <li><a href="#data"><i class="fa fa-info-circle"></i> Acerca de</a></li>
+            <li><a id="BtnModal">Ingresar | Registrar</a></li>
           </ul>
         </section>
       </nav>    

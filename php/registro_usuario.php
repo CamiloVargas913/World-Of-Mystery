@@ -10,7 +10,8 @@ require_once('Conexion.php');
 		$avatar=$_FILES['avatar']['name'];
 		$nivel=1;
 		$indicador=rand(0,10000);
-		$dia=date('z');
+		$dia=date('z'); 
+		$avatar=str_replace(' ', '', $avatar);
 		$ruta="../FotosAvatar/".$indicador.$dia.$avatar;
 		//insercion base de datos
 		$conn=new Conexion();
@@ -23,7 +24,7 @@ require_once('Conexion.php');
 			$stmt=$llamarMetodo->prepare($sql);
 			$stmt->execute();
 				if ($stmt) {
-					$carga = @move_uploaded_file($_FILES['avatar']['tmp_name'], $ruta);
+					$carga = @move_uploaded_file($_FILES['avatar']['tmp_name'],$ruta);
 					echo "<section class='alert2'>Usuario Registrado</section>";
 				}else{
 					echo "<section class='alert'>Error al registrar usuario</section>";
