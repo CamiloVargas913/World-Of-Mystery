@@ -32,11 +32,12 @@ ul,ol {
 	color: #fff;
 }
 .slider .caption h1{
-	font-size: 50px;
+	font-size: 60px;
+	font-family: adventure;
 }
 .slider .caption p{
 	margin-top: 10px;
-	font-size: 20px;
+	font-size: 25px;
 }
 .pagination{
 	position: absolute;
@@ -69,8 +70,9 @@ ul,ol {
 .right{
 	right: 10px;
 }
-@media  {
-	
+@font-face{
+  font-family: adventure;  
+  src:url(../fonts/Adventure.otf);
 }
 @media screen and (max-width:780px) {
 	.slider .caption p{

@@ -51,7 +51,7 @@ nav ul {
   padding: 0;
   text-align: right;
   margin: 0;
-  padding-right: 40px;
+  padding-right: 5px;
   transition: 1s;
 }
  
@@ -63,14 +63,13 @@ nav.black ul {
  
 nav ul li {
       display: inline-block;
-      padding: 0px 10px;
       font-family: udec;
 }
  
 nav ul li a {
   text-decoration: none;
   width: 100%;
-  padding: 10px ;
+  padding: 10px;
   font-weight: bolder;
   color: #fff;
   font-size: 110%;
@@ -120,6 +119,18 @@ nav ul li a:hover{
   text-align: center; 
   color: #fff;
 }
+.descripcion h4 a {
+  text-decoration: none;
+  color:#fff; 
+  padding: 5px;
+}
+.descripcion h4 a:hover {
+  color: #1565c0;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: #fff;
+  border: 3px solid #1565c0;
+}
  h3{
   padding: 10px;
   font-size: 190%;
@@ -138,7 +149,7 @@ nav ul li a:hover{
   border-radius: 2px;
 }
 .parrafo{
-  margin-top: 2%;
+  margin-top: 0.2%;
   width: 50%;
   float:right; 
   text-align: center;
@@ -173,6 +184,7 @@ nav ul li a:hover{
   margin-top: 2%;
   width: 65%;
   float:left; 
+  text-align: justify;
   border-radius: 2px;
   padding: 2%;
   background: #57007FB6;
@@ -233,15 +245,16 @@ color:  #1565c0;
 background: #FFF;
 
 }
+
 /*estilos Scroll*/
 body::-webkit-scrollbar{
   width: 15px;
-  background: #000;
+  background: #FFF;
 }
 body::-webkit-scrollbar-thumb{
   background: #5A62AA;
   border-radius: 5px;
-  border: 3px solid #000;
+  border: 3px solid #FFF;
 }
 @font-face{
   font-family: udec;  

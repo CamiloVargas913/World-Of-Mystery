@@ -20,7 +20,7 @@ require_once('Conexion.php');
 		$res=validarUsuario($llamarMetodo,$nickname,$correo);
 		if ($res2) {
 			if ($res) {	
-			$sql="INSERT INTO usuario  VALUES (NULL, '$nickname', '$ruta', '$nombre', '$apellido', '$correo','$pais', '$pasword', '$nivel')";
+			$sql="INSERT INTO usuario  VALUES (NULL, '$nickname', '$ruta', '$nombre', '$apellido', '$correo','$pasword', '$nivel','$pais')";
 			$stmt=$llamarMetodo->prepare($sql);
 			$stmt->execute();
 				if ($stmt) {
